@@ -1,13 +1,8 @@
 
-export interface Question {
-    id: string;
-    text: string;
-    options: Option[];
-    correctOptionId: number;
-}
 
-export interface Option {
+export type Question = {
   id: string;
-  text: string;
-  isCorrect: boolean;
-}
+  questionText: string;
+  options: string[];
+  correctAnswer: number;
+};
